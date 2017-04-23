@@ -3,7 +3,7 @@
   <head>
     <title>My Pet</title>
   </head>
-  <body>
+  <body style="background-color:brown">
     <h1>My Pet-Muren</h1>
     <img src="http://dogs.bsl-sbt.com/imagefiles/dogsimages/boerboel.jpg"
     <p>Muren is my dog.Can you see him?Doesn't he look nice?No?I think he's swell.He is a Boerboel,a South African mastff(large dog breed.)
