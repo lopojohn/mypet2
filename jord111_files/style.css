@@ -1,0 +1,2759 @@
+/*
+Theme Name: Air Jordan V3
+Version: 1.0
+Theme URI: http://airjordanshoeshq.com
+Description: A Flowing Editorial Magazine Theme inspired from http://www.burnhambox.com/hunted
+Author: AJSHQ
+Text Domain: AJSHQ
+Author URI: http://airjordanshoeshq.com
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/*///////////////////////////////
+////// TABLE OF CONTENTS ////////
+/////////////////////////////////
+
+1. Body & General / #brnhmbx_hunted_body
+
+2. Header / #brnhmbx_hunted_header
+
+	2.1. Header Menu
+	2.2. Top Search & Social
+	2.3. Sticky Menu
+
+3. Layout / #brnhmbx_hunted_layout
+
+4. Article / #brnhmbx_hunted_article
+
+	4.1. Listing
+	4.2. Post Style Z
+	4.3. Header Area
+	4.4. Author Bar
+	4.5. Social Bar
+
+5. Widgets / #brnhmbx_hunted_widgets
+
+	5.1. Widget Areas
+	5.2. Widget Items
+	5.3. WP Tag Cloud
+	5.4. Social Widget
+	5.5. Search Widget
+	5.6. WP Calendar Widget
+	5.7. Recent Comments Widget
+	5.8. Image Widget
+	5.9. Ads Widget
+	5.10. WP RSS Widget
+	5.11. Post Widget - Listing Styles
+
+6. Related & Authorized Posts / #brnhmbx_hunted_related_posts
+
+7. Post Comments / #brnhmbx_hunted_post_comments
+
+8. Pages / #brnhmbx_hunted_pages
+
+	8.1. Google Maps
+	8.2. Archive Pages
+	8.3. Page 404
+
+9. Footer / #brnhmbx_hunted_footer
+
+10. Navigation / #brnhmbx_hunted_navigation
+
+	10.1. Primary Navigation
+	10.2. Slicknav
+	10.3. Header & Footer Navigation
+	10.4. Page Navigation
+
+11. Slider / #brnhmbx_hunted_slider
+
+12. Misc / #brnhmbx_hunted_misc
+
+13. Contact Form 7 / #brnhmbx_hunted_contact_form_7
+
+14. WP Defaults / #brnhmbx_hunted_wp_defaults
+
+15. Banner Management / #brnhmbx_hunted_banner_management
+
+16. Mail Chimp / #brnhmbx_hunted_mail_chimp
+
+17. Instagram Slider Widget / #brnhmbx_hunted_instagram
+
+18. Author Box / #brnhmbx_hunted_author_box
+
+/////////////////////////////////
+/////////////////////////////////
+///////////////////////////////*/
+
+/*//////////////////////////////////////////////////////////////////
+////////// 1. Body & General / #brnhmbx_hunted_body STARTS //////////
+///////////////////////////////////////////////////////////////////*/
+
+body {
+	width: 100%;
+	min-width: 320px;
+	overflow-x: hidden;		
+	margin-top: 50px;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+address {
+	margin-bottom: 1em;
+}
+
+code {
+	font-size: 14px;
+}
+
+kbd {
+    font-family: monospace;
+	font-size: 14px;
+}
+
+pre {
+	font-family: monospace;
+	font-size: 14px;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	padding: 20px;
+	line-height: 1.4em;
+}
+
+q:before,
+q:after {
+	content: '"';
+}
+
+var {
+	font-family: monospace;
+	font-size: 14px;
+}
+
+table {
+	border: 1px solid;
+}
+
+th, td {
+	padding: 10px;
+	border: 1px solid;
+}
+
+dt {
+	font-weight: bold;
+}
+
+abbr {
+	font-style: italic;
+}
+
+p {
+	margin: 0 0 1em 0;
+	line-height: 1.6em;
+}
+
+em {
+	font-style: italic;
+}
+
+hr {
+	border: none;
+    height: 1px;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+input {
+	-webkit-appearance: none; /*Safari/Chrome*/
+    -moz-appearance: none; /*Firefox*/
+    -ms-appearance: none; /*IE*/
+    -o-appearance: none; /*Opera*/
+    appearance: none;
+	height: 40px;
+	border: 3px solid;
+	padding: 0 15px 0 15px;
+	font-size: 14px;	
+	width: 100%;
+	-webkit-border-radius: 0;
+}
+
+textarea {
+	-webkit-appearance: none; /*Safari/Chrome*/
+    -moz-appearance: none; /*Firefox*/
+    -ms-appearance: none; /*IE*/
+    -o-appearance: none; /*Opera*/
+    appearance: none;
+	width: 100%;
+	height: 200px;
+	border: 3px solid;
+	resize: none;
+	padding: 15px;
+	font-size: 14px;
+	-webkit-border-radius: 0;
+}
+
+input.button, input[type="submit"], button {	
+    -webkit-appearance: none; /*Safari/Chrome*/
+    -moz-appearance: none; /*Firefox*/
+    -ms-appearance: none; /*IE*/
+    -o-appearance: none; /*Opera*/
+    appearance: none;
+    -webkit-border-radius: 0;	
+	border-radius: 0px;
+	cursor: pointer;
+	font-size: 12px ;
+	font-weight: 700;	
+	padding: 0px 15px 0px 15px;
+	width: auto;
+	border: 3px solid;
+}
+
+input[type="password"] {
+	max-width: 300px;
+}
+
+input[type="checkbox"] {
+	border: none;
+	height: 30px;
+	line-height: 30px;	
+	width: auto;
+}
+
+input[type="radio"] {
+	border: none;	
+	width: auto;
+}
+
+select {
+	width: 100%;
+	border: none;
+	padding: 10px 10px 10px 10px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+blockquote {
+	padding: 20px;
+	margin: 0px 0px 1em 0px;
+    vertical-align: baseline;
+}
+
+blockquote p {
+	margin: 0;
+}
+
+img {
+	display: block;
+}
+
+label.screen-reader-text {
+	display: none;
+}
+
+.body-outer {
+	width: 100%;
+}
+
+.site-mid {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px 20px 20px;
+}
+
+/*////////// #brnhmbx_hunted_body ENDS //////////*/
+
+/*/////////////////////////////////////////////////////////////
+////////// 2. Header / #brnhmbx_hunted_header STARTS //////////
+/////////////////////////////////////////////////////////////*/
+
+.top-line-outer {
+	width: 100%;
+}
+
+.top-line-container {
+	margin: 0 auto;
+	max-width: 1240px;
+}
+
+.top-line-inner {
+	padding: 0px 20px 0px 20px;
+	margin: 0px 20px 0px 20px;	
+	font-size: 0;
+}
+
+.site-top {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 50px;
+	display: none;
+}
+
+.site-menu-outer {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+h1.logo-text {	
+	margin: 0px;
+}
+
+.site-top-container {
+	width: 100%;
+	vertical-align: middle;
+	font-size: 0;	
+}
+
+.header-social {	
+	display: inline-block !important;
+	width: auto;
+	text-align: left;	
+	line-height: 1em;
+	vertical-align: middle;
+}
+
+/* 2.1. Header Menu */
+.header-menu-outer {
+	width: 100%;
+	display: none;
+}
+
+.site-menu-outer .assign-menu {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.header-menu-outer .assign-menu {
+	line-height: 30px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.footer-menu-outer .assign-menu {
+	font-size: 12px;
+}
+
+.header-menu-touch {
+	margin-bottom: 20px;
+	border-top: 2px dashed;
+	margin-right: 20px;
+	padding-top: 20px;
+}
+
+.header-menu-outer .footer-nav {
+	display: inline-block; font-size: 12px;
+}
+/* */
+
+/* 2.2. Top Search & Social */
+.top-extra-outer {
+	float: right;
+	vertical-align: middle;
+	font-size: 16px;
+	text-align: right;
+	width: auto;
+}
+
+.top-extra {
+	display: table;
+}
+
+.top-extra-inner {
+	display: table-cell;
+	vertical-align: middle;	
+	position: relative;
+}
+
+.top-extra-inner li.empty {
+	margin-top: -10px !important;
+}
+
+.top-search {
+	position: absolute;
+	margin-right: 30px;
+	margin-top: -30px;
+	display: none;
+	z-index: 10;	
+	right: 0;
+}
+
+.top-search input,
+.top-search-touch input {
+	width: 240px;
+	border: none;
+}
+
+.top-search-touch {
+	margin-bottom: 10px;
+	margin-top: -10px;
+}
+
+.top-search-touch input {
+	padding-left: 0;	
+}
+
+.top-search-touch i {
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+.brnhmbx-top-search-button {
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 30px;
+	cursor: pointer;
+}
+/* */
+
+/* 2.3. Sticky Menu */
+.sticky-logo-outer { display: inline-table; vertical-align: middle; margin: 0px 30px 0px 0px; text-align: left; }
+.sticky-logo-container { display: table-cell; vertical-align: middle; }
+.sticky-logo-container img { height: 25px; }
+#sticky-menu { display: none; width: 100%; min-height: 50px; position: fixed; z-index: 9999999; top: -400px; -webkit-transition: all 1s ease; transition: all 1s ease; }
+.sticky-menu-inner { width: 100%; max-width: 1240px; padding: 0px 20px 0px 20px; margin: 0 auto; }
+.menu-sticky { margin-top: 400px; }
+/* */
+
+/*////////// #brnhmbx_hunted_header ENDS //////////*/
+
+/*/////////////////////////////////////////////////////////////
+////////// 3. Layout / #brnhmbx_hunted_layout STARTS //////////
+/////////////////////////////////////////////////////////////*/
+
+.article-wrapper-outer {
+	float: none;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+[class*="col-"] {
+	vertical-align: top;
+}
+
+.col-1-2,
+.col-1-2-sidebar,
+.col-1-2:nth-child(2n+2),
+.col-1-2-sidebar:nth-child(2n+2) {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.row-1-1-2 .col-1-2-sidebar {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.col-1-3,
+.col-1-3:nth-child(2n+2),
+.col-1-3:nth-child(3n+3) {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.row-2-3 .col-1-3 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.site-content {
+	padding-bottom: 0px;
+}
+
+.main-container,
+.main-container-sidebar,
+.main-container-sidebar-cc2 {
+	margin: 0 auto;
+}
+
+.article-inner {
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+/* */
+
+/*////////// #brnhmbx_hunted_layout ENDS //////////*/
+
+/*///////////////////////////////////////////////////////////////
+////////// 4. Article / #brnhmbx_hunted_article STARTS //////////
+///////////////////////////////////////////////////////////////*/
+
+.article-content-outer,
+.article-content-outer-sidebar {
+	margin: 0;
+	line-height: 1.6em;
+}
+
+.sticky-icon {
+	padding: 3px 5px;
+	margin-left: 10px;
+}
+
+article img {
+	max-width: 100%;
+	height: auto;
+	border: none !important;
+}
+
+article.post {
+	margin-bottom: 20px;
+}
+
+article.post ul {
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+article.post-attachment img {
+	display: inline-block;
+}
+
+article.post-attachment {
+	width: 100%;
+	min-height: 400px;
+	padding: 40px;
+	display: table;
+	text-align: center;
+}
+
+article.post-video .bx-pager-outer {
+	display: none;
+}
+
+article.post-aside .article-content-outer,
+article.post-aside .article-content-outer-sidebar,
+article.post-link .article-content-outer,
+article.post-link .article-content-outer-sidebar {
+	margin: 0px;
+	padding: 0px;
+}
+
+.fea-img-container img {
+	margin: 0 auto;
+}
+
+/* 4.1. Listing */
+.home-listing-title-inner {
+	font-size: 25px;
+	line-height: 1.1em;
+	margin: 0;
+}
+
+.home-listing-title-z-inner {
+	font-size: 16px;
+	line-height: 1.1em;
+	margin: 0;
+}
+
+.home-excerpt-outer {
+	padding-top: 15px;
+	margin: 0 auto;
+}
+
+.home-excerpt {
+	line-height: 1.6em;
+	margin: 10px 0px 10px 0px;
+}
+
+.home-cat-tag-page {
+	line-height: 1.6em;
+}
+
+.home-excerpt-outer .home-cat-tag-page.pager-only {
+	margin-bottom: 5px;
+}
+
+.article-content-outer .home-cat-tag-page.pager-only,
+.article-content-outer-sidebar .home-cat-tag-page.pager-only {
+	margin-bottom: 20px;
+}
+
+.btnReadMore {
+	font-weight: 700;
+}
+/* */
+
+/* 4.2. Post Style Z */
+.post-styleZ {
+	float: left;
+	width: 100%;
+	min-width: 260px;
+}
+
+.post-styleZ-inner {
+	height: 100px;
+	width: 100%;
+}
+
+.post-styleZ-img {
+	width: 160px;
+	height: 100px;
+	float: left;
+	position: absolute;
+}
+
+.post-styleZ-info {
+	float: left;
+	height: 100px;
+	display: table;
+	width: 100%;
+}
+
+.post-styleZ-info .table-cell-middle {	
+	border-bottom: 3px solid;
+}
+
+.post-styleZ-info-with-t {
+	padding-left: 180px;
+}
+/* */
+
+/* 4.3. Header Area */
+.header-area-title {
+	font-size: 25px;
+	line-height: 1em;
+	margin-bottom: 15px;
+	margin-top: 0px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+.post-page .header-area-title {
+	text-align: center;
+}
+
+.header-area .header-area-date,
+.header-area-sidebar .header-area-date {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.header-area-excerpt {
+	font-size: 16px;
+	line-height: 1.6em;
+	margin-bottom: 20px;	
+	padding: 0;
+}
+
+.header-area .listing-comment,
+.header-area-sidebar .listing-comment {
+	margin-right: 20px;
+}
+
+.header-area .btnReadMore,
+.header-area-sidebar .btnReadMore {
+	display: none;
+}
+/* */
+
+/* 4.4. Author Bar */
+.author-bar {
+	margin: 15px 0 15px 0;
+}
+
+.author-bar-avatar {
+	border-left: 3px solid;
+	padding: 12px 0 12px 16px;
+	margin-bottom: 15px;
+}
+
+.author-bar-date-views {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.author-bar-date-views i {
+	margin-right: 5px;
+}
+/* */
+
+/* 4.5. Social Bar */
+.share-bar {
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.share-bar span {
+	padding-right: 25px;
+	display: inline-block;
+}
+
+.share-icon-outer {
+	display: inline-block;
+	margin-right: 30px;	
+	font-size: 0;
+}
+
+.share-icon-outer:last-child {
+	margin-right: 0px;	
+}
+
+.share-icon-outer a {
+	font-size: 20px;
+}
+
+.si-facebook a { color: #3b5998 !important; }
+.si-twitter a { color: #55acee !important; }
+.si-google a { color: #dc4e41 !important; }
+.si-pinterest a { color: #bd2126 !important; }
+.si-facebook:hover a, .si-twitter:hover a, .si-google:hover a, .si-pinterest:hover a { color: #000 !important; }
+/* */
+
+/*////////// #brnhmbx_hunted_article ENDS //////////*/
+
+/*///////////////////////////////////////////////////////////////
+////////// 5. Widgets / #brnhmbx_hunted_widgets STARTS //////////
+///////////////////////////////////////////////////////////////*/
+
+/* 5.1. Widget Areas */
+.sidebar {
+	margin-left: 0px;
+	float: left;	
+	width: 100%;
+}
+
+.sidebar li {
+	list-style: none;
+}
+
+.header-widgets-container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px 0 20px;
+}
+
+.footer-widget-area,
+.upper-widget-area,
+.header-widget-area,
+.home-widget-area {
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+}
+
+.footer-widget-area-inner,
+.footer-widget-area-inner-col2,
+.upper-widget-area-inner,
+.upper-widget-area-inner-col2,
+.header-widget-area-inner,
+.header-widget-area-inner-col2,
+.home-widget-area-inner,
+.home-widget-area-inner-col2,
+.home-widget-area-inner-col2-sidebar {
+	padding-left: 0px;
+	margin: 0px;
+}
+
+.footer-widget-area li,
+.upper-widget-area li,
+.header-widget-area li,
+.home-widget-area li {
+	list-style: none;
+}
+
+.widget-item-footer-outer,
+.widget-item-footer-outer-col2,
+.widget-item-footer-outer-col4 {
+	min-width: 150px;
+	width: 100%;
+	margin-right: 0px;	
+	position: relative;
+	margin-bottom: 40px;	
+	display: inline-block;
+	vertical-align: top;
+}
+
+.widget-item-upper-outer,
+.widget-item-upper-outer-col2,
+.widget-item-header-outer,
+.widget-item-header-outer-col2,
+.widget-item-home-outer,
+.widget-item-home-outer-col2,
+.widget-item-home-outer-col2-sidebar {
+	min-width: 150px;
+	width: 100%;
+	margin-right: 0px;	
+	position: relative;
+	margin-bottom: 20px;
+	font-size: 0;
+}
+
+.widget-item-footer-outer:last-child,
+.widget-item-footer-outer-col2:last-child,
+.widget-item-footer-outer-col4:last-child,
+.widget-item-upper-outer:last-child,
+.widget-item-upper-outer-col2:last-child,
+.widget-item-header-outer:last-child,
+.widget-item-header-outer-col2:last-child {
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+.widget-item-home-outer:last-child,
+.widget-item-home-outer-col2:last-child,
+.widget-item-home-outer-col2-sidebar:last-child {
+	margin-right: 0;
+	margin-bottom: 20px;
+}
+/* */
+
+/* 5.2. Widget Items */
+.widget-item {
+	text-align: left;
+	margin-bottom: 20px;	
+	overflow: hidden;
+	width: 100%;
+}
+
+.widget-item-footer {
+	text-align: left;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.widget-item:last-child {
+	margin-bottom: 0px;
+}
+
+.widget-item-upper-outer:last-child,
+.widget-item-upper-outer-col2:last-child,
+.widget-item-header-outer:last-child,
+.widget-item-header-outer-col2:last-child {
+	margin-bottom: 20px;
+}
+
+.widget-item img,
+.widget-item-footer img {
+    max-width: 100%;
+	height: auto;
+}
+
+.widget-item-inner {	
+	font-size: 0;
+}
+
+.widget-item-footer .widget-item-inner {
+	padding: 0px;
+}
+
+.widget-item-inner ul {
+    padding-left: 0;	
+	margin: 0;
+}
+
+.widget-item-inner ul li li {
+	padding-left: 20px;
+}
+
+.widget-item h2,
+.widget-item-footer h2 {	
+	text-align: left;
+	font-size: 25px;
+	margin: 0;
+	padding: 0 0 0 20px;
+	height: 70px;
+	line-height: 70px;
+	border-left: 3px solid;
+}
+
+.widget_categories .widget-item-inner,
+.widget_archive .widget-item-inner,
+.widget_calendar .widget-item-inner,
+.widget_nav_menu .widget-item-inner,
+.widget_meta .widget-item-inner,
+.widget_pages .widget-item-inner,
+.widget_recent_comments .widget-item-inner,
+.widget_search .widget-item-inner,
+.widget_tag_cloud .widget-item-inner,
+.widget_text .widget-item-inner,
+.widget_rss .widget-item-inner {
+	font-size: 14px;	
+	line-height: 1.6em;
+}
+
+.widget_recent_entries .widget-item-inner {
+	font-size: 16px;	
+	font-weight: 700;
+	line-height: 1.6em;
+}
+
+.widget_categories h2,
+.widget_archive h2,
+.widget_calendar h2,
+.widget_nav_menu h2,
+.widget_meta h2,
+.widget_pages h2,
+.widget_recent_comments h2,
+.widget_recent_entries h2,
+.widget_search h2,
+.widget_tag_cloud h2,
+.widget_text h2,
+.widget_rss h2 {
+	margin-bottom: 20px;
+}
+
+.widget-view-all {
+	margin-top: 20px;
+	padding: 12px;
+	width: 100%;
+	text-align: center;
+}
+/* */
+
+/* 5.3. WP Tag Cloud */
+.tagcloud a {
+	display: inline-block;
+}
+
+ul.wp-tag-cloud {
+	margin-top: 10px;
+}
+
+.wp-tag-cloud li {
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;		
+	padding: 10px 0 10px 0;
+	border: 3px solid;	
+	text-transform: uppercase;
+}
+
+.wp-tag-cloud li a {
+	padding: 13px 10px;
+}
+/* */
+
+/* 5.4. Social Widget */
+.social-widget-outer {
+	display: inline-block;
+	font-size: 0;
+	width: 100%;
+}
+
+.social-widget li {
+	float: left;
+	width: 75px;
+	margin: 0;
+	padding: 0;
+}
+
+.social-widget li a {
+	display: block;
+	text-align: center;
+}
+
+.social-widget li a:hover {
+	opacity: 0.6;
+}
+
+.social-widget li i {
+	font-size: 24px;
+	line-height: 50px;
+}
+/* */
+
+/* 5.5. Search Widget */
+.search-widget {
+	width: 100%;
+}
+
+.search-widget-inner {
+	border-bottom: 3px solid;
+}
+
+.search-widget-input-box {
+	float: left;
+	width: 87%;
+	line-height: 44px;
+}
+
+.search-widget-input {
+	width: 100%;
+	border: none;
+}
+
+.search-widget-s-icon,
+.search-widget-s-pro-icon {
+	cursor: pointer;
+	display: table !important;
+	float: right;
+	text-align: right;
+	width: 13%;
+	height: 45px;
+}
+/* */
+
+/* 5.6. WP Calendar Widget */
+#wp-calendar {
+	border-collapse: collapse;
+	border: none;
+	width: 100%;
+}
+
+#wp-calendar td,
+#wp-calendar th {
+	text-align: center;
+}
+
+#wp-calendar caption {
+	padding: 7px 0 0 0;
+	height: 40px;
+	text-align: center;
+}
+
+#wp-calendar thead,
+#wp-calendar tfoot {
+	line-height: 40px;
+}
+
+#wp-calendar tbody {
+	line-height: 40px;
+}
+
+#wp-calendar #prev,
+#wp-calendar #next {
+	padding: 0 10px;
+}
+
+#wp-calendar #prev {
+	text-align: left;
+}
+
+#wp-calendar #next {
+	text-align: right;
+}
+
+#wp-calendar th,
+#wp-calendar td {
+	padding: 0;
+	border: none;
+}
+/* */
+
+/* 5.7. Recent Comments Widget */
+.recent-comment-item {
+	display: table;
+	width: 100%;
+	margin-top: 20px;
+	height: 60px;
+}
+
+.recent-comment-img {	
+	display: table-cell;
+	vertical-align: top;
+	width: 75px;
+	padding-right: 15px;
+}
+
+.recent-comment-hdr {
+	font-size: 16px;
+	line-height: 1.2em;
+}
+
+.recent-comment-author {
+	font-size: 12px;
+	line-height: 1.2em;
+	margin-bottom: 5px;	
+	text-transform: uppercase;
+}
+/* */
+
+/* 5.8. Image Widget */
+.image-widget-wrapper-outer {
+	font-size: 0;
+}
+
+.image-widget-wrapper {
+	display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.imw-w-o-i {
+	height: 100px;
+}
+
+.image-widget-wrapper img {
+    width: 100%;	
+	height: auto;
+}
+
+.image-widget-wrapper img + .image-widget-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image-widget-content {
+	width: 100%;
+	height: 100%;
+}
+
+.image-widget-inner {
+	display: table;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.image-widget-title {
+	margin: 20px;
+	padding-left: 17px;
+	border-left: 3px solid;
+	line-height: 1em;
+	text-align: left;
+	text-shadow: 2px 2px #000;
+}
+/* */
+
+/* 5.9. Ads Widget */
+.adwidget img {
+	width: 100%;
+	display: block;
+}
+/* */
+
+/* 5.10. WP RSS Widget */
+ul li a.rsswidget {
+	font-size: 16px !important;
+	font-weight: 700;
+}
+
+a.rsswidget img {
+	display: none;
+}
+
+.rss-date {
+	display: block;
+	font-size: 12px;	
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.rssSummary {
+	margin-bottom: 10px;	
+	font-size: 14px;
+}
+
+.widget_rss li a {
+	display: block;	
+	font-size: 14px;
+}
+
+.widget_rss cite {
+	font-size: 12px;
+	display: block;
+	padding-bottom: 20px;
+}
+
+.widget_rss ul li:last-child cite {
+	padding-bottom: 0px;
+}
+/* */
+
+/* 5.11. Post Widget - Listing Styles */
+.listing-img-outer {
+	position: relative;
+}
+
+.listing-img-outer img {
+	width: 100%;
+	height: auto;	
+	display: block;
+}
+
+.listing-box-container {
+	width: 100%;
+}
+
+.listing-box-2-outer {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding: 10px;
+}
+
+.listing-box {
+	width: 100%;	
+	padding-top: 15px;
+}
+
+.listing-box-w-o-i {
+	width: 100%;	
+	padding-top: 0px;
+}
+
+.brnhmbx-post-widget .listing-box {
+	padding: 15px 20px 15px 20px;
+}
+
+.listing-date {
+	font-size: 12px;
+	display: inline-block;	
+	margin-bottom: 8px;
+	margin-right: 10px;
+}
+
+.listing-comment {
+	font-size: 12px;
+	display: inline-block;
+}
+
+.listing-comment-w-o-date {
+	font-size: 12px;
+	display: inline-block;
+	margin-top: 2px;
+}
+
+.brnhmbx-posts-widget .listing-date {
+	margin-right: 15px;
+}
+
+.brnhmbx-posts-widget .listing-comment-w-o-date {
+	margin-top: 0px;
+	margin-bottom: 7px;
+}
+
+.listing-comment-icon {
+	font-size: 14px;
+	padding-right: 5px;
+	display: inline-block;
+}
+
+.listing-comment-number {
+	display: inline-block;
+}
+
+.listing-title {
+	width: 100%;
+	line-height: 1.1em !important;
+	display: inline-block;
+	font-size: 20px !important;
+}
+
+.brnhmbx-posts-widget .listing-title {
+	line-height: 1em;
+	font-size: 16px;
+}
+
+.upper-widget-area .brnhmbx-post-widget .listing-title,
+.header-widget-area .brnhmbx-post-widget .listing-title,
+.home-widget-area .brnhmbx-post-widget .listing-title {
+	line-height: 1.1em;
+	font-size: 25px;
+}
+
+.home-widget-area .brnhmbx-posts-widget .listing-box .listing-title {
+	line-height: 1.1em;
+	font-size: 25px !important;
+}
+
+.upper-widget-area .brnhmbx-posts-widget .listing-title,
+.header-widget-area .brnhmbx-posts-widget .listing-title,
+.home-widget-area .brnhmbx-posts-widget .listing-title {
+	line-height: 1.1em;
+	font-size: 18px;
+}
+
+.brnhmbx-posts-widget .image-widget-wrapper .listing-title,
+.brnhmbx-post-widget .image-widget-wrapper .listing-title {
+	text-shadow: 2px 2px #000;
+	padding: 0 15px 0 15px;	
+	color: #FFF;
+}
+
+.widget-listing-z {
+	width: 100%;
+	min-width: 150px;
+	height: 60px;	
+}
+
+.widget-listing-z img {
+	width: 96px;
+	height: 60px;
+	float: left;
+	position: absolute;
+}
+
+.widget-listing-z-info {
+	height: 60px;
+	float: left;
+	display: table;
+	width: 100%;	
+}
+
+.widget-listing-z-info-with-t {
+	padding-left: 111px;
+}
+
+.widget-listing-z-title-outer {
+	border-bottom: 3px solid;
+}
+
+.widget-listing-z-title {
+	font-size: 16px;
+	line-height: 1.3em;
+	display: block;
+}
+
+.upper-widget-area .brnhmbx-posts-widget .widget-listing-z-title,
+.header-widget-area .brnhmbx-posts-widget .widget-listing-z-title,
+.home-widget-area .brnhmbx-posts-widget .widget-listing-z-title {
+	font-size: 16px;
+	line-height: 1.3em;
+}
+
+.upper-widget-area .brnhmbx-posts-widget .widget-listing-z,
+.header-widget-area .brnhmbx-posts-widget .widget-listing-z,
+.home-widget-area .brnhmbx-posts-widget .widget-listing-z {
+	height: 60px;
+}
+
+.upper-widget-area .brnhmbx-posts-widget .widget-listing-z img,
+.header-widget-area .brnhmbx-posts-widget .widget-listing-z img,
+.home-widget-area .brnhmbx-posts-widget .widget-listing-z img {
+	width: 96px;
+	height: 60px;
+}
+
+.upper-widget-area .brnhmbx-posts-widget .widget-listing-z-info,
+.header-widget-area .brnhmbx-posts-widget .widget-listing-z-info,
+.home-widget-area .brnhmbx-posts-widget .widget-listing-z-info {
+	height: 60px;
+}
+
+.upper-widget-area .brnhmbx-posts-widget .widget-listing-z-info-with-t,
+.header-widget-area .brnhmbx-posts-widget .widget-listing-z-info-with-t,
+.home-widget-area .brnhmbx-posts-widget .widget-listing-z-info-with-t {
+	padding-left: 111px;
+}
+
+.sponsored-post {
+	font-weight: normal;
+	font-size: 10px;
+}
+
+.image-widget-inner .sponsored-post,
+.post-styleZ-info .sponsored-post {
+	line-height: 15px;
+	margin-bottom: -10px;
+}
+/* */
+
+/*////////// #brnhmbx_hunted_widgets ENDS //////////*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////
+////////// 6. Related & Authorized Posts / #brnhmbx_hunted_related_posts STARTS //////////
+////////////////////////////////////////////////////////////////////////////////////////*/
+
+.related-posts-outer,
+.related-posts-outer-sidebar,
+.authorized-posts-outer,
+.authorized-posts-outer-sidebar {
+	margin: 0;
+}
+
+.related-posts,
+.authorized-posts {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.related-post-item,
+.related-post-item-sidebar,
+.authorized-post-item,
+.authorized-post-item-sidebar {
+	float: left;
+	min-width: 150px;
+	width: 100%;
+	margin-right: 0px;	
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.related-post-item img,
+.related-post-item-sidebar img,
+.authorized-post-item img,
+.authorized-post-item-sidebar img {
+	width: 100%;
+	height: auto;	
+	display: block;
+}
+
+.related-post-item:last-child,
+.related-post-item-sidebar:last-child,
+.authorized-post-item:last-child,
+.authorized-post-item-sidebar:last-child {
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+.related-posts .listing-box {
+	padding-top: 13px;
+}
+
+.related-posts-title {
+	font-size: 25px;
+	line-height: 1.2em;
+	margin: 10px 0px 20px 0px;
+}
+
+.authorized-post-item .post-styleZ-inner,
+.authorized-post-item-sidebar .post-styleZ-inner,
+.authorized-post-item .post-styleZ-info,
+.authorized-post-item-sidebar .post-styleZ-info {
+	height: 60px;
+}
+
+.authorized-post-item .post-styleZ-img,
+.authorized-post-item-sidebar .post-styleZ-img {	
+	width: 96px;
+	height: 60px;
+}
+
+.authorized-post-item .post-styleZ-info-with-t,
+.authorized-post-item-sidebar .post-styleZ-info-with-t {
+	padding-left: 111px;
+}
+
+/*////////// #brnhmbx_hunted_related_posts ENDS //////////*/
+
+/*///////////////////////////////////////////////////////////////////////////
+////////// 7. Post Comments / #brnhmbx_hunted_post_comments STARTS //////////
+///////////////////////////////////////////////////////////////////////////*/
+
+.comments-outer,
+.comments-outer-sidebar {
+	padding: 10px 0px 20px 0px;
+}
+
+.comments {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+}
+
+.comments-hdr {
+	font-size: 25px;
+}
+
+.comments-list {
+	padding: 20px 0px 0px 0px;
+}
+
+.comments-list ul,
+.comments-list ol {
+	padding-left: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+.comment.depth-2,
+.comment.depth-3 {
+	padding-left: 0px;
+}
+
+.comment-item-outer {
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.comment-item {
+	display: table;
+	width: 100%;
+}
+
+.comment-author-img {
+	display: block;
+	width: 60px;
+	padding-right: 20px;
+}
+
+.comment-content {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+
+.comment-info {
+	float: left;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.comment-info-inner {
+	display: table;
+	height: 40px;
+}
+
+.btnReply {
+	margin-right: 10px;
+	display: inline-block;	
+	padding: 10px 0 10px 0;
+	border: 3px solid;
+}
+
+.btnEdit {
+	display: inline-block;	
+	padding: 10px 0 10px 0;
+	border: 3px solid;
+}
+
+.comment-edit-link,
+.comment-reply-link {		
+	padding: 13px 10px;
+}
+
+.comment-text {
+	margin-top: 5px;
+}
+
+.comment-text-w-a {
+	margin-left: 0px;
+}
+
+.comment-text ul {
+	list-style: inside;
+	padding-left: 0;	
+	margin: 0;
+}
+
+.comment-text ol {
+	list-style-type: decimal; 
+	list-style-position: inside; 
+	padding-left: 0;	
+	margin: 0;
+}
+
+.comment-text ul li li,
+.comment-text ol li li {
+	padding-left: 30px;
+}
+
+.comment-awaiting {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.comments-paging {
+	margin: 0px 0px 40px 0px;
+	text-align: center;
+}
+
+.comments-paging .page-numbers {
+	padding: 15px;
+}
+
+.comment-reply-title {
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.comment-form input[type="text"],
+.comment-form textarea {
+	max-width: 100%;
+}
+
+.comment-input-hdr {
+	padding: 10px 0px 10px 0px;
+}
+
+.form-submit { 	
+	margin: 20px 0px 0px 0px;
+}
+
+.comment-form p.comment-subscription-form {
+	font-size: 14px;
+	padding: 10px 0 0 0;
+	margin: 0;
+}
+
+.comment-form p.comment-subscription-form label {
+	vertical-align: top;
+	line-height: 30px;
+	padding-left: 5px;
+}
+
+/*////////// #brnhmbx_hunted_post_comments ENDS //////////*/
+
+/*///////////////////////////////////////////////////////////
+////////// 8. Pages / #brnhmbx_hunted_pages STARTS //////////
+///////////////////////////////////////////////////////////*/
+
+/* 8.1. Google Maps */
+#googleMap {
+	width: 100%;
+}
+/* */
+
+/* 8.2. Archive Pages */
+.filter-bar {
+	display: table;
+	width: 100%;
+	height: 70px;
+	padding: 0px 20px 0px 20px;
+	line-height: 1.2em;	
+	border-left: 3px solid;
+}
+/* */
+
+/* 8.3. Page 404 */
+.page-404 {
+	display: table;
+	width: 100%;
+	height: 400px;
+	padding: 40px;
+	text-align: center;
+}
+
+.nothing-found {
+	padding: 40px;
+	text-align: center;	
+	border: 3px solid;
+}
+
+.nothing-found i,
+.page-404 i {
+	margin-right: 10px;
+}
+/* */
+
+/*////////// #brnhmbx_hunted_pages ENDS //////////*/
+
+/*/////////////////////////////////////////////////////////////
+////////// 9. Footer / #brnhmbx_hunted_footer STARTS //////////
+/////////////////////////////////////////////////////////////*/
+
+.footer-box-outer {
+	width: 100%;
+}
+
+.footer-box-inner {
+	width: 100%;
+	padding: 40px 20px 20px 20px;
+	margin: 0 auto;
+	display: block;
+}
+
+.footer-bottom-outer {
+	width: 100%;
+}
+
+.footer-bottom {
+	padding: 25px 20px;
+	width: 100%;
+	margin: 0 auto;
+}
+	
+.footer-text {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.footer-menu-outer {
+	width: 100%;
+	text-align: left;	
+	vertical-align: middle;
+}
+
+.footer-social {
+	width: 100%;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.social-menu-item {
+	margin-right: 40px;
+}
+
+.social-menu-item:last-child {
+	margin-right: 0px;
+}
+
+.social-menu-item i {
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+.social-menu-item span {
+	display: none;
+}
+
+/*////////// #brnhmbx_hunted_footer ENDS //////////*/
+
+/*//////////////////////////////////////////////////////////////////////
+////////// 10. Navigation / #brnhmbx_hunted_navigation STARTS //////////
+//////////////////////////////////////////////////////////////////////*/
+
+/* 10.1. Primary Navigation */
+#site-menu,
+#site-menu-sticky {
+	display: none;	
+	padding-left: 0px;	
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.site-nav2 {	
+	float: right;
+	overflow: hidden;
+	font-size: 14px;
+}
+
+.site-nav2 ul:before,
+.site-nav2 ul:after {
+	content: '';
+	display: table;
+}
+
+.site-nav2 ul:after {
+	clear: both;
+}
+
+.site-nav2 ul {
+	list-style: none;
+	z-index: 9999;
+}
+
+.site-nav2 li {
+	float: left;
+	list-style: none;
+	line-height: 1.8em;
+}
+
+.site-nav2 li a {
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.site-nav2 #site-menu,
+.site-nav2 #site-menu-sticky {
+	margin-left: -15px;
+}
+
+.site-nav2 li:last-child a {
+	margin-right: 0px;
+}
+
+.site-nav2 li ul li:last-child a {
+	margin-right: 15px;
+}
+
+.site-nav2 li ul {
+	position: absolute;
+	display: none;
+	height: auto;
+	width: 240px;
+	text-align: left;
+	margin-top: 5px;		
+	padding-left: 0px;	
+}
+
+.site-nav2 li:hover > ul {
+	display: block;
+}
+
+.site-nav2 li li {
+    position: relative;
+	display: block;
+	float: none;
+	width: 240px;
+}
+
+.site-nav2 li li a {
+   padding: 0;
+}
+
+.site-nav2 li ul a {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.site-nav2 li ul li:first-child {
+	margin-top: 10px;
+}
+
+.site-nav2 li ul li:last-child {
+	margin-bottom: 10px;
+}
+
+.site-nav2 li li ul {
+	position: absolute;
+    top: 0;
+    left: 100%;
+	padding-left: 0px;	
+	margin-top: -10px;
+}
+
+.site-nav2 li li li ul {
+	padding-left: 0px;	
+}
+
+.site-nav2 i {
+	padding-right: 5px;
+}
+/* */
+
+/* 10.2. Slicknav */
+.mobile-header {
+	position: fixed;
+	z-index: 999999;
+	width: 100%;
+	top: 0px;
+}
+
+.mobile-logo-outer {
+	display: inline-table;
+	height: 50px;
+	margin-left: 20px;
+}
+
+.mobile-logo-container {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.mobile-logo-container img {
+	height: 25px;
+}
+
+.brnhmbx-menu-button {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 22px;
+	line-height: 50px;
+	cursor: pointer;
+	float: right;
+	margin-right: 20px;
+}
+
+.social-accounts {
+	display: none;
+}
+
+.social-accounts-touch {
+	margin-bottom: 20px;
+}
+	
+.slicknav_menu {
+	display: block;
+	min-width: 280px;	
+	padding-left: 20px;
+}
+
+.slicknav_menu ul a {
+	font-size: 14px;
+}
+
+.slicknav_menu .widget_archive,
+.slicknav_menu .widget_calendar,
+.slicknav_menu .widget_categories,
+.slicknav_menu .widget_pages,
+.slicknav_menu .widget_rss,
+.slicknav_menu .widget_recent_entries,
+.slicknav_menu .widget_recent_comments,
+.slicknav_menu .widget_search,
+.slicknav_menu .widget_tag_cloud,
+.slicknav_menu .widget_text {
+	display: none;
+}
+
+.slicknav_menu .slicknav_btn {
+	display: none;
+}
+
+.slicknav_menu .slicknav_nav {
+	margin-left: -20px !important;
+	margin-top: 10px;
+}
+/* */
+
+/* 10.3. Header & Footer Navigation */
+.footer-nav ul:before,
+.footer-nav ul:after {
+	content: '';
+	display: table;
+}
+
+.footer-nav ul:after {
+	clear: both;
+}
+
+.footer-nav ul {
+	list-style: none;
+	z-index: 9999;
+	padding-left: 0px;
+}
+
+.footer-nav li {
+	float: none;
+}
+
+.footer-nav li:first-child a {
+	margin-left: 0px;
+}
+
+.footer-nav li:last-child a {
+	margin-right: 0px;
+}
+
+.footer-nav {
+	float: left;	
+}
+
+.footer-nav li a {
+	display: block;
+	margin-left: 0px;
+	margin-right: 0px;
+	line-height: 2em !important;
+}
+
+.header-menu-touch .footer-nav li a {
+	line-height: 2em !important;
+}
+
+.header-menu-outer li.nav-sep {
+	line-height: 30px;
+	margin: 0px 15px 0px 15px;
+	width: 1px;
+	height: 1px;
+}
+
+.footer-menu-outer li.nav-sep {
+	line-height: 10px;
+	margin: 0px 15px 0px 15px;
+	width: 1px;
+	height: 1px;
+}
+
+.footer-nav li.nav-sep,
+.footer-nav li.nav-sep:last-child,
+.header-menu-touch .footer-nav li.nav-sep {
+	display: none;
+}
+
+.footer-nav .menu {
+	margin: 0px;
+}
+
+.footer-nav i {
+	padding-right: 5px;
+}
+/* */
+
+/* 10.4. Page Navigation */
+.pagenavi {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+
+.pagenavi-fp {
+	text-align: left;
+}
+
+.pagenavi-lp {
+	text-align: right;
+}
+
+.pagenavi-cp {
+	text-align: center;
+}
+
+.pagenavi .page-numbers {
+	padding: 0px 15px 0px 15px;
+	display: none;
+}
+
+.pagenavi a.next.page-numbers {
+	float: right;	
+	display: inline-block;
+	padding: 10px;
+	border: 3px solid;
+}
+
+.pagenavi a.prev.page-numbers {
+	float: left;	
+	display: inline-block;
+	padding: 10px;
+	border: 3px solid;
+}
+
+.pagenavi .page-numbers:first-child {
+	padding-left: 0;
+}
+
+.pagenavi .page-numbers:last-child {
+	padding-right: 0;
+}
+
+.pagenavi .page-number-inner {
+	line-height: 40px;
+	display: inline-block;
+}
+
+span.page-numbers.dots {
+	opacity: 0.5;
+}
+
+.page-navi {
+	padding-bottom: 20px;
+}
+
+.page-navi-prev {
+	float: left;
+	width: 100%;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	min-width: 280px;
+}
+
+.page-navi-next {
+	float: left;
+	width: 100%;
+	padding-left: 0px;
+	min-width: 280px;
+}
+
+.page-navi-btn {
+	width: 100%;
+	padding: 10px;
+}
+
+.page-navi-prev-img {
+	width: 112px;
+	height: 70px;
+	margin-right: 15px;	
+	display: inline-block;
+}
+
+.page-navi-next-img {
+	width: 112px;
+	height: 70px;
+	margin-left: 15px;	
+	display: inline-block;
+}
+
+.page-navi-prev-img img,
+.page-navi-next-img img {
+	width: 112px;
+	height: 70px;
+}
+
+.page-navi-prev-info {
+	height: 70px;
+	display: table;
+	line-height: 1.2em;
+	font-size: 16px;
+}
+
+.page-navi-next-info {
+	float: right;
+	text-align: right;
+	height: 70px;
+	display: table;
+	line-height: 1.2em;
+	font-size: 16px;
+}
+
+.page-navi-prev-badge {
+	float: left;
+}
+
+.page-navi-next-badge {
+	float: right;
+	width: 100%;
+	text-align: right;
+}
+/* */
+
+/*////////// #brnhmbx_hunted_navigation ENDS //////////*/
+
+/*//////////////////////////////////////////////////////////////
+////////// 11. Slider / #brnhmbx_hunted_slider STARTS //////////
+//////////////////////////////////////////////////////////////*/
+
+.hunted-slider-container {
+	display: none;
+	padding-bottom: 20px;	
+	overflow-x: hidden;
+}
+
+.slide-container {
+    position: relative;
+	text-align: center;
+    width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.slide-container img {
+    width: 100%;
+}
+
+.slide-container img + .slide-info-outer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide-info-outer {
+	width: 100%;
+	height: 100%;
+}
+
+.slide-info {
+	display: table;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.slide-info-2 {
+	display: table;
+	height: 100%;	
+	width: 100%;
+	margin: 0 auto;
+}
+
+.slider-header {
+	font-size: 25px;
+	line-height: 1.1em;	
+	text-shadow: 2px 2px #000;
+}
+
+.slider-caption {
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+.slider-date {
+	display: inline-block;
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+
+.slider-author-outer {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.slider-author-avatar {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	border-bottom: 3px solid;
+}
+
+.slider-author {
+	display: inline-block;
+	padding: 0;
+	margin: 0 0 0 10px;
+}
+
+.slider-comment-icon {
+	display: none;
+	padding-bottom: 7px;
+}
+
+.slider-comment-icon-inner {
+	font-size: 14px;
+	padding-right: 5px;
+	display: inline-block;
+}
+
+.slider-comment-icon-number {
+	font-size: 12px;
+	display: inline-block;
+}
+
+.slide-info-inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.slide-text-outer {
+	background-color: transparent;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.slide-text {
+	max-width: 600px;
+}
+
+.slide-text-padding {
+	padding: 15px 40px 15px 40px;
+}
+
+.slide-text-padding-2 {
+	padding: 15px 25px 45px 25px;
+}
+
+.slider-categories {
+	padding-top: 5px;
+	font-size: 12px;
+	display: none;
+}
+
+.bxslider,
+.bxslider-main,
+.bxslider-vid li {
+	list-style: none;	
+	padding-left: 0px;
+	margin: 0 !important;
+}
+
+.bxslider-vid {
+	padding-left: 0px;
+}
+
+.bxslider-main {
+	margin-top: 0px;
+}
+
+.bxslider img,
+.bxslider-main img {
+	width: 100%;
+}
+
+.bx-viewport li {
+	min-height: 1px;
+	min-width: 1px;
+}
+
+.bx-wrapper .bx-prev {
+	left: 0px;
+}
+	
+.bx-wrapper .bx-next {
+	right: 0px;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed,
+.video-container video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*////////// #brnhmbx_hunted_slider ENDS //////////*/
+
+/*//////////////////////////////////////////////////////////
+////////// 12. Misc / #brnhmbx_hunted_misc STARTS //////////
+//////////////////////////////////////////////////////////*/
+
+.fw400 { font-weight: 400; }
+.fw700 { font-weight: 700; }
+.fst-italic { font-style: italic; }
+.fs10 { font-size: 10px; }
+.fs11 { font-size: 11px; }
+.fs12 { font-size: 12px; }
+.fs14 { font-size: 14px; }
+.fs16 { font-size: 16px; }
+.fs18 { font-size: 18px; }
+.fs19 { font-size: 19px; }
+.fs20 { font-size: 20px; }
+.fs25 { font-size: 25px; }
+.fs40 { font-size: 40px; }
+
+.table-cell-middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.table-cell-bottom {
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+.t-a-c {
+	text-align: center;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.left:after,
+.right:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hiddenInfo {
+	display: none;
+}
+
+.btn-to-top i {
+	padding-right: 10px;
+}
+
+.top-extra-inner .btn-to-top i {
+	padding-right: 0px;
+	margin-left: 30px;	
+	vertical-align: middle;
+}
+
+.cancel-display-block {
+	display: block;
+}
+
+.hunted-sep {
+	border-top: 3px solid;
+	width: 40px;
+	padding-bottom: 20px;
+}
+
+.post-page .hunted-sep {
+	margin: 0 auto;
+}
+
+.pr15 {
+	padding-right: 15px;
+}
+
+.pb11 {
+	padding-bottom: 11px;
+}
+
+.p20 {
+	padding: 20px;
+}
+
+.p40 {
+	padding: 40px;
+}
+
+.ml5 {
+	margin-left: 5px;
+}
+
+.mb5 {
+	margin-bottom: 5px;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+.mt5 {
+	margin-top: 5px;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.mt15 {
+	margin-top: 15px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.mt40 {
+	margin-top: 40px;
+}
+
+/*////////// #brnhmbx_hunted_misc ENDS //////////*/
+
+/*//////////////////////////////////////////////////////////////////////////////
+////////// 13. Contact Form 7 / #brnhmbx_hunted_contact_form_7 STARTS //////////
+//////////////////////////////////////////////////////////////////////////////*/
+
+.wpcf7-form p {  
+	font-size: 12px;
+	margin: 10px 0px 10px 0px;
+	font-weight: 700;
+}
+
+.wpcf7-form input,
+.wpcf7-form textarea {
+	max-width: 100%;
+	font-weight: normal;
+}
+
+.wpcf7-form input[type="submit"] {
+	font-weight: 700;
+}
+
+.wpcf7-form .wpcf7-submit:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.wpcf7-form-control-wrap span,
+.wpcf7-response-output,
+.wpcf7-mail-sent-ok {
+	font-weight: bold;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-mail-sent-ok,
+div.wpcf7-mail-sent-ng,
+div.wpcf7-spam-blocked {
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+div.wpcf7 img.ajax-loader {
+	display: none;
+}
+
+/*////////// #brnhmbx_hunted_contact_form_7 ENDS //////////*/
+
+/*////////////////////////////////////////////////////////////////////////
+////////// 14. WP Defaults / #brnhmbx_hunted_wp_defaults STARTS //////////
+////////////////////////////////////////////////////////////////////////*/
+
+span.post-date {
+	display: block;
+}
+
+.wp-caption {
+	max-width: 100%;
+}
+
+.wp-caption img {
+	display: block;
+}
+
+.wp-caption-text {
+	font-size: 12px;
+	text-align: left;
+}
+
+div.wp-caption {
+	margin-bottom: 1em;
+}
+
+article .wp-caption {
+	position: relative;
+}
+
+article .wp-caption p.wp-caption-text {
+	padding: 0px 5px 0px 5px;
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	margin: 0 10px 10px 10px;
+}
+
+.sticky { }
+.gallery-caption { margin-top: 5px; }
+.bypostauthor { }
+img.alignright,
+div.alignright { float: right; margin: 0 0 1em 2em; }
+img.alignleft,
+div.alignleft { float: left; margin: 0 2em 1em 0; }
+img.aligncenter,
+div.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+img.alignright:after,
+div.alignright:after,
+img.alignleft:after,
+div.alignleft:after,
+.alignright:after,
+.alignleft:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.more-link {
+	display: none;
+}
+
+/*////////// #brnhmbx_hunted_wp_defaults ENDS //////////*/
+
+/*////////////////////////////////////////////////////////////////////////////////////
+////////// 15. Banner Management / #brnhmbx_hunted_banner_management STARTS //////////
+////////////////////////////////////////////////////////////////////////////////////*/
+
+.leaderboard-outer {
+	width: 100%;
+	margin: 0 0 20px 0;
+	text-align: center;
+}
+
+.leaderboard-outer-pp-bottom {
+	margin-top: 20px !important;
+}
+
+.leaderboard-outer-afs {
+	margin: 20px 0 0 0 !important;
+}
+
+.leaderboard-inner {
+	width: 100%;
+	font-size: 0;	
+}
+
+.leaderboard-inner img {		
+	width: 100%;
+}
+
+.leaderboard-full,
+.leaderboard-among,
+.leaderboard-responsive {
+	display: none;
+}
+
+.leaderboard-header {
+	display: inline-block;
+	float: right;
+}
+
+.leaderboard-header img {
+	width: 728px !important;
+	height: 90px !important;
+}
+
+.leaderboard-header-logo {
+	display: table;
+	height: 90px;
+}
+
+/*////////// #brnhmbx_hunted_banner_management ENDS //////////*/
+
+/*//////////////////////////////////////////////////////////////////////
+////////// 16. Mail Chimp / #brnhmbx_hunted_mail_chimp STARTS //////////
+//////////////////////////////////////////////////////////////////////*/
+
+.widget_mc4wp_form_widget {
+	font-size: 14px;
+}
+
+.widget-item.widget_mc4wp_form_widget h2 {
+	margin-bottom: 20px;
+}
+
+p.mc4wp-checkbox {
+	margin: 0px;
+}
+
+.mc4wp-form {
+	margin: 0px !important;
+}
+
+.mc4wp-form input[type="text"],
+.mc4wp-form input[type="email"] {
+	margin: 10px 0 10px 0;
+	max-width: 300px;
+	height: 40px;
+}
+
+.mc4wp-form input[type="submit"] {
+	width: 100%;
+	max-width: 300px;	
+	padding: 0px 15px 0px 15px;
+	display: block;
+	border: 3px solid;
+}
+
+.widget-item .mc4wp-form input[type="text"],
+.widget-item .mc4wp-form input[type="email"] {
+	margin: 0 0 10px 0;
+}
+
+.widget-item .mc4wp-form input[type="text"],
+.widget-item .mc4wp-form input[type="email"],
+.widget-item-footer .mc4wp-form input[type="text"],
+.widget-item-footer .mc4wp-form input[type="email"] {
+	max-width: 100%;
+}
+
+.widget-item .mc4wp-form input[type="submit"],
+.widget-item-footer .mc4wp-form input[type="submit"] {
+	max-width: 100%;
+}
+
+.mc4wp-response p {
+	margin: 10px 0 0 0;
+}
+
+/* For Newsletter Bar */
+.newsletter-bar {
+	width: 100%; min-height: 90px;
+}
+
+.newsletter-bar-inner {
+	max-width: 1240px; padding: 40px 20px 50px 20px; margin: 0 auto; text-align: center;
+}
+
+.newsletter-bar-left {
+	margin-bottom: 25px;
+}
+
+.newsletter-bar-left label {
+	line-height: 1em;
+}
+
+.newsletter-bar .mc4wp-form {
+	margin: 0px;
+}
+
+.newsletter-bar .mc4wp-form input[type="text"],
+.newsletter-bar .mc4wp-form input[type="email"] {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 15px;	
+	border: 3px solid;
+	background-color: transparent;	
+	height: 70px;
+	font-size: 20px;
+	font-weight: normal;
+	vertical-align: middle;
+}
+
+.newsletter-bar .mc4wp-form input[type="submit"] {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 0px;
+	height: 70px;
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+.newsletter-bar .mc4wp-alert {
+	margin-top: 10px !important;
+	margin-bottom: 0px !important;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 18px;
+}
+/* */
+
+/*////////// #brnhmbx_hunted_mail_chimp ENDS //////////*/
+
+/*//////////////////////////////////////////////////////////////////////////////////
+////////// 17. Instagram Slider Widget / #brnhmbx_hunted_instagram STARTS //////////
+//////////////////////////////////////////////////////////////////////////////////*/
+
+.jr-insta-slider h2 {
+	margin-bottom: 20px;
+}
+
+.jr_col_1 img, .jr_col_2 img, .jr_col_3 img, .jr_col_4 img, .jr_col_5 img, .jr_col_6 img, .jr_col_7 img, .jr_col_8 img, .jr_col_9 img, .jr_col_10 img {
+	width: 100%;
+}
+
+/*////////// #brnhmbx_hunted_instagram ENDS //////////*/
+
+/*//////////////////////////////////////////////////////////////////////
+////////// 18. Author Box / #brnhmbx_hunted_author_box STARTS //////////
+//////////////////////////////////////////////////////////////////////*/
+
+.author-box-outer {
+	margin-bottom: 40px;	
+	border-bottom: 3px dashed;
+	border-top: 3px dashed;
+}
+
+.author-box,
+.author-box-sidebar {
+	padding: 40px 0px;
+}
+
+.author-avatar {
+	line-height: 40px;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+
+.author-avatar img {
+	float: left;
+	margin: 0 15px 0 0;
+}
+
+.author-desc {
+	line-height: 1.6em;
+}
+
+.author-links {
+	margin-top: 15px;
+	font-size: 12px;
+	margin-right: 20px;	
+	display: inline-block;
+}
+
+/*////////// #brnhmbx_hunted_author_box ENDS //////////*/
+
+/* DEMO */
+.brnhmbx-passive {
+	line-height: 1em !important;
+	padding-bottom: 2px;
+	padding-top: 5px;
+	opacity: 0.5;
+}
+
+.brnhmbx-last-menu-item {
+	line-height: 1em !important;
+	padding-bottom: 2px;
+	padding-top: 5px;
+}
+/* */
